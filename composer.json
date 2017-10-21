@@ -1,0 +1,32 @@
+{
+    "name": "mohamedsabil83/laravel-hijri",
+    "description": "Hijri date helper",
+    "type": "library",
+    "require": {
+        "php": ">=5.6",
+        "nesbot/carbon": "^1.22"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MohamedSabil83",
+            "email": "me@mohamedsabil83.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Mohamedsabil83\\Hijri\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mohamedsabil83\\Hijri\\HijriServiceProvider"
+            ],
+            "aliases": {
+                "Hijri": "Mohamedsabil83\\Hijri\\Facades\\HijriFacade"
+            }
+        }
+    }
+}
